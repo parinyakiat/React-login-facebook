@@ -21,7 +21,8 @@ class App extends Component {
     console.log(respone);
     axios.post('https://linebot59161100.herokuapp.com/alert/login/facebook', {
       id: 'U88dc267eda973b555aa930015dad10fd',
-      img: respone.picture.data.url
+      img: respone.picture.data.url,
+      name:respone.name
     })
     .then(function (response) {
       console.log(response);
